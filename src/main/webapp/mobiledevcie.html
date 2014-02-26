@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0043)http://9.110.180.218:8080/agent/application -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mobile Cloud</title>
+	
+	<meta http-equiv="Cache-Control" content="no-store">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+<!--     <link href="http://9.110.180.218:8080/agent/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://9.110.180.218:8080/agent/static/font-awesome/css/font-awesome.min.css">	
+     -->
+    <!-- JavaScript -->
+    <script src="./jquery-1.10.2.js"></script>
+    <script src="./bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="./jquery.tablesorter.js"></script>
+    <script src="./tables.js"></script>
+    
+    <!-- Ickeck -->
+<!--     <link href="http://9.110.180.218:8080/agent/static/js/icheck/skins/all.css" rel="stylesheet"> -->
+    <script src="./jquery.icheck.min.js"></script>
+    
+    <!-- Date Picker -->
+<!--     <link href="http://9.110.180.218:8080/agent/static/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
+     --><script src="./bootstrap-datetimepicker.js"></script>
+
+
+<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+
+<body style="">
+	<div id="container">
+		<!-- Sidebar -->
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".application").addClass("selected");
+	});
+</script>
+<div class="navigation">
+	<div class="navigation-profile">
+		<a class="avatar" style="background-image: url(&#39;/agent/static/image/poweroff.png&#39;)" href="http://9.110.180.218:8080/agent/login/logout" title="Log out"></a>
+		<p class="user-name" style="color:white;"> mdcservice <a href="http://9.110.180.218:8080/agent/login/logout"><span class="fa fa-power-off" style="color: white;"></span></a></p>
+		<p class="user-name">
+			<span class="badge">2</span> VM in using <br><br>
+			<span class="badge">4</span> Device in using
+		</p>
+	</div>
+	
+	<div class="navigation-permission">
+		<h5>Resources</h5>
+		<ul>
+			<li class="item vm">
+				<a href="http://9.110.180.218:8080/agent/vm">
+					<span class="fa fa-file"></span> VM 
+				</a>
+			</li>
+			<li class="item application selected">
+				<a href="./Mobile Cloud-mobile device.htm">
+					<span class="fa fa-file"></span> Mobile Device 
+				</a>
+			</li>
+			<li class="item operatelog">
+				<a href="http://9.110.180.218:8080/agent/operatelog">
+					<span class="fa fa-file"></span> Log 
+				</a>
+			</li>
+		</ul>
+		
+		
+		
+		<h5>Others</h5>
+		<ul>
+			
+			<li class="item">
+				<a href="http://9.110.180.218:8080/agent/application#">
+					<span class="fa fa-file"></span> Guide &amp; Document
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+		<div class="content">
+			
+
+
+
+
+<div class="row">
+	<div class="col-lg-12">
+		<h2>
+			Mobile Device <small>Operate Mobile Device</small>
+		</h2>
+		<ol class="breadcrumb">
+			<li class="active"><i class="fa fa-table"></i> Request Management</li>
+		</ol>
+	</div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+	<div class="col-lg-12">
+	
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Device Resource
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Host Name</th>
+								<th>Attached VMName</th>
+								<th>Device Name</th>
+								<th>Used User</th>
+								<th>Status</th>
+								<th>Operation</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+								<tr>
+									<td>9.110.180.203</td>
+									<td></td>
+									<td>SH12NPL00679</td>
+									<td></td>
+									<td>Available</td>
+									<td>
+										
+											<a type="button" class="btn btn-success btn-sm" href="javascript:customApplyDevice('e0c9a87390594190951bd81be16c6b91','028488214142432e901759db1f1bfb7c');">Apply</a>
+										
+									</td>
+								</tr>
+							
+								<tr>
+									<td>9.110.180.206</td>
+									<td></td>
+									<td>1847598c</td>
+									<td></td>
+									<td>Available</td>
+									<td>
+										
+											<a type="button" class="btn btn-success btn-sm" href="javascript:customApplyDevice('704aff96e3254875b7ff4764fea5f12a','ab77e047ad12465aac39f0a134aa2c9c');">Apply</a>
+										
+									</td>
+								</tr>
+							
+								<tr>
+									<td>9.110.180.206</td>
+									<td></td>
+									<td>SH1BCTJ01414</td>
+									<td></td>
+									<td>Available</td>
+									<td>
+										
+											<a type="button" class="btn btn-success btn-sm" href="javascript:customApplyDevice('42a5c9a832934ac8a0d8c0936489e4cb','ab77e047ad12465aac39f0a134aa2c9c');">Apply</a>
+										
+									</td>
+								</tr>
+							
+								<tr>
+									<td>9.110.180.206</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>IOS</td>
+									<td>
+										
+									</td>
+								</tr>
+							
+								<tr>
+									<td>9.110.180.203</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Unrecognized</td>
+									<td>
+										
+									</td>
+								</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Requested Device
+				<a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#historyUsage">History Usage</a>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<!-- <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ApplyDevice">Create</a> -->
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Request VM</th>
+								<th>Request Device</th>
+								<th>Start Time</th>
+								<th>End Time</th>
+								<th>Rent Duration</th>
+								<th>Status</th>
+								<th>Operation</th>
+							</tr>
+						</thead>
+						<tbody>
+						
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.row -->
+
+<!-- Apply Device custom -->
+<div class="modal fade" id="CustomApplyDevice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Apply A Device</h4>
+      </div>
+       <div class="modal-body">
+			<ul id="myTab" class="nav nav-tabs">
+		        <li class="active" id="customapplydevice-1"><a href="http://9.110.180.218:8080/agent/application#home" data-toggle="tab">Web Access</a></li>
+		        <li class="" id="customapplydevice-2"><a href="http://9.110.180.218:8080/agent/application#profile" data-toggle="tab">VM+Mobile</a></li>
+	        </ul>
+	        <div id="myTabContent" class="tab-content">
+		        <div class="tab-pane fade active in" id="home">
+		          <p style="padding-top:5px;">
+		          	Device will be attached to Service VM automatically.
+		          </p>
+		          <form action="http://9.110.180.218:8080/agent/application/customcreate" method="post" id="custom-apply-device-form-1" class="form-horizontal" role="form">
+		          	<div class="form-group">
+					    <label for="rentDuration-1" class="col-sm-4 control-label">Rent Duration</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control" id="rentDuration-1" required="required" name="rentDuration">
+					    </div>
+					 </div>
+			          <div class="row">
+			          	<div class=".col-md-12 pull-right">
+			          		<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        				<button type="submit" class="btn btn-primary btn-sm">Save</button>
+			          	</div>
+			          </div>
+		          </form>
+		        </div>
+		        <div class="tab-pane fade" id="profile">
+		          <p style="padding-top:5px;">
+		          	Device will be attached to specified VM.
+		          </p>
+		          <form action="http://9.110.180.218:8080/agent/application/customcreate" method="post" id="custom-apply-device-form-2" class="form-horizontal" role="form">
+					 <div class="form-group">
+					    <label for="rentDuration-1" class="col-sm-4 control-label">Attach VM</label>
+					    <div class="col-sm-8">
+					      <table id="vm-list">
+					      	
+					      </table>
+					    </div>
+					 </div>
+					 <div class="form-group">
+					    <label for="rentDuration-1" class="col-sm-4 control-label">Rent Duration</label>
+					    <div class="col-sm-8">
+					      <input type="text" class="form-control" id="rentDuration-1" required="required" name="rentDuration">
+					    </div>
+					 </div>
+			          <div class="row">
+			          	<div class=".col-md-12 pull-right">
+			          		<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        				<button type="submit" class="btn btn-primary btn-sm">Save</button>
+			          	</div>
+			          </div>
+		          </form>
+		        </div>
+	       </div>
+       </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+<script type="text/javascript">
+	function customApplyDevice(id,esxHostId){
+		var webAccessAction=$("#custom-apply-device-form-1").attr("action");
+		$("#custom-apply-device-form-1")[0].reset();
+		$("#custom-apply-device-form-2")[0].reset();
+		$("#custom-apply-device-form-1").attr("action",webAccessAction+"?requestDeviceId="+id+"&esxHostId="+esxHostId);
+		$.ajax({
+            type: "get",
+            url: "/agent/application/getVMListByHostId/"+esxHostId,
+            dataType: "json",
+            success: function (data) {
+            	$("#vm-list").empty();
+            	if(data==null){
+            		$("#vm-list").append("<tr><td><span style='color:red;font-style:italic'>* No vm is available,please use web access way.</span></td></tr>");
+            	}
+            	$(data).each(function(index,item){
+            		var content="<tr>";
+            			content+="<td><input type='radio' id='requestVmId-'"+(index+1)+" name='requestVmId' value='"+item.id+"' required='required'/></td>";
+            			content+="<td style='padding-left:10px;'>"+item.vmName+"</td>";
+            		content+="</tr>";
+            		$("#vm-list").append(content);
+            		$('#custom-apply-device-form-2 input').iCheck({
+                    	checkboxClass: 'icheckbox_flat-blue',
+                        radioClass: 'iradio_flat-blue',
+                        increaseArea: '20%' // optional
+                    });
+            	});
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            	alert(errorThrown);
+            }
+    	});
+		$('#myTab a:first').tab('show');
+		$('#CustomApplyDevice').modal('show');
+	}
+</script>
+
+<!-- Apply Device -->
+<div class="modal fade" id="ApplyDevice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Apply A Device</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/application/create" method="post" id="apply-device-form">
+	      <div class="modal-body">
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<h5>Choose A Device</h5>
+	        			<table>
+			        		
+			        	</table>
+			        	<h5>Choose Attach VM</h5>
+			        	<table id="select-vm">
+			        		
+			        	</table>
+			        	
+			        	
+			        	<script type="text/javascript">
+			        		$(document).ready(function(){
+			        			$('#apply-device-form input').iCheck({
+			        	        	checkboxClass: 'icheckbox_flat-blue',
+			        	            radioClass: 'iradio_flat-blue',
+			        	            increaseArea: '20%' // optional
+			        	        }).on('ifChecked', function(event){
+			        	        	var esxHostId=$(this).attr("esxHostId");
+			        	        	$.ajax({
+                                        type: "get",
+                                        url: "/agent/application/getVMListByHostId/"+esxHostId,
+                                        dataType: "json",
+                                        success: function (data) {
+                                        	$("#select-vm").empty();
+                                        	$(data).each(function(index,item){
+                                        		var content="<tr>";
+                                        			content+="<td><input type='radio' id='requestVmId-'"+(index+1)+" name='requestVmId' value='"+item.id+"' required='required'/></td>";
+                                        			content+="<td><label for='"+(index+1)+"' style='padding-left: 5px;'>"+item.vmName+"</label></td>";
+                                        		content+="</tr>";
+                                        		$("#select-vm").append(content);
+                                        		$("#select-vm input").iCheck({
+                			        	        	checkboxClass: 'icheckbox_flat-blue',
+                			        	            radioClass: 'iradio_flat-blue',
+                			        	            increaseArea: '20%' // optional
+                			        	        });
+                                        	});
+                                        },
+                                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        	alert(errorThrown);
+                                        }
+                                	});
+			        	        });
+			        		});
+			        	</script>
+	        		</div>
+	        		
+	        		<div class="col-md-6">
+	        			<table>
+			        		<tbody><tr>
+			        			<td><label for="rentDuration">Duration</label> </td>
+			        			<td style="padding-left: 5px;"><input type="text" class="form-control" name="rentDuration" id="rentDuration" required=""></td>
+			        		</tr>
+			        	</tbody></table>
+	        		</div>
+	        	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary btn-sm">Save</button>
+	      </div>
+       </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Install APK -->
+<div class="modal fade" id="installApk" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Upload an apk to install</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/application/installApk" method="post" id="installApk-form" enctype="multipart/form-data" class="form-horizontal" role="form">
+	      <div class="modal-body">
+	        	<div class="form-group">
+				    <label for="file" class="col-sm-3 control-label">File input *</label>
+				    <div class="col-sm-9">
+				      <input type="file" name="file" title="Choose a file" required="">
+				    </div>
+				 </div>
+				 
+				 <div class="form-group">
+				    <label for="appName" class="col-sm-3 control-label">App name *</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control" name="appName" id="appName" required="">
+				    </div>
+				 </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary btn-sm">Install</button>
+	      </div>
+       </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+	function install(id){
+		var action=$("#installApk-form").attr("action");
+		$("#installApk-form").attr("action",action+"/"+id);
+		$('#installApk').modal('show');
+	}
+</script>
+
+<!-- Uninstall APK -->
+<div class="modal fade" id="uninstallApk" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Select uninstall component</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/application/uninstallApk" method="post" id="uninstallApk-form" class="form-horizontal" role="form">
+	      <div class="modal-body">
+	      <div class="row">
+			  <table id="install-file-table">
+	        		
+	          </table>
+		  </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary btn-sm">Uninstall</button>
+	      </div>
+       </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+	function uninstallApk(id){
+		$.ajax({
+			type:"get",
+			url:"/agent/application/listInstallApks?deviceRequestId="+id,
+			dataType: "json",
+			success:function(data){
+				$("#install-file-table").empty();
+            	$(data).each(function(index,item){
+            		var content="<tr>";
+            			content+="<td><input type='radio' id='fileId-'"+(index+1)+" name='fileId' value='"+item.id+"' required='required'/></td>";
+            			content+="<td><label for='"+(index+1)+"' style='padding-left: 5px;'>"+item.appName+"</label></td>";
+            		content+="</tr>";
+            		$("#install-file-table").append(content);
+            		$("#install-file-table input").iCheck({
+        	        	checkboxClass: 'icheckbox_flat-blue',
+        	            radioClass: 'iradio_flat-blue',
+        	            increaseArea: '20%' // optional
+        	        });
+            	});
+            	$('#uninstallApk').modal('show');
+			},
+			error:function(){
+				alert("Get install apks error.");
+			},
+			complete: function(XMLHttpRequest, textStatus){
+
+			}
+		});
+	}
+</script>
+
+<!-- Reboot -->
+<div class="modal fade" id="rebootDevice" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Reboot Warning</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/application/reboot" method="post" id="rebootDevice-form">
+	      <div class="modal-body">
+	      <input id="deviceRequestId-reboot" name="deviceRequestId" type="hidden">
+	      <p>
+	      	Please do not reboot device until you find it can't be controlled.
+	      </p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-danger btn-sm">Reboot</button>
+	      </div>
+       </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+	function rebootDevice(id){
+		$("#deviceRequestId-reboot").val(id);
+		$('#rebootDevice').modal('show');
+	}
+</script>
+
+<!-- Push File -->
+<div class="modal fade" id="pushFile" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Choose a file to upload</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/application/pushFile" method="post" id="pushFile-form" enctype="multipart/form-data" class="form-horizontal" role="form">
+	      <div class="modal-body">
+	      	<div class="form-group">
+			    <label for="vmName" class="col-sm-3 control-label">File input *</label>
+			    <div class="col-sm-9">
+			      <input type="file" name="file" title="Choose a file" required="">
+			    </div>
+			 </div>
+			 
+			 <div class="form-group">
+			    <label for="devicePath" class="col-sm-3 control-label">Device Path *</label>
+			    <div class="col-sm-9">
+			     <input type="text" class="form-control" name="devicePath" id="devicePath" required="">
+			    </div>
+			 </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary btn-sm">OK</button>
+	      </div>
+       </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+	function pushFile(id){
+		var action=$("#pushFile-form").attr("action");
+		$("#pushFile-form").attr("action",action+"/"+id);
+		$('#pushFile').modal('show');
+	}
+</script>
+
+<!-- Pull File -->
+<div class="modal fade" id="pullFile" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Pull File from Current Device</h4>
+      </div>
+	      <div class="modal-body">
+			 <div class="form-group">
+			    <label for="devicePath" class="col-sm-3 control-label">Device Path *</label>
+			    <div class="col-sm-6">
+			     <input type="hidden" name="deviceRequestId" id="deviceRequestId-pull">
+			     <input type="text" class="form-control" name="devicePath" id="devicePath-pull" required="">
+			    </div>
+			    <div class="col-sm-3">
+			    	<a type="button" class="btn btn-primary btn-sm" href="javascript:retrieveFile();" id="retrieve-button">Retrieve</a>
+			    </div>
+			 </div>
+			 <div class="form-group">
+			    <div class="col-sm-12" id="file-container">
+					
+			    </div>
+			 </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+	      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	function pullFile(id){
+		$("#deviceRequestId-pull").val(id);
+		$("#devicePath-pull").val("");
+		$("#file-container .retrieved-file").remove();
+		$('#pullFile').modal('show');	
+	}
+	
+	function retrieveFile(){
+		var deviceRequestId=$("#deviceRequestId-pull").val();
+		var devicePath=$("#devicePath-pull").val();
+		if(devicePath==''){
+			alert("File path can't be empty.");
+			return false;
+		}
+		$.ajax({
+			type:"post",
+			url:"/agent/application/pull/"+deviceRequestId,
+			data:"devicePath="+devicePath,
+			dataType: "json",
+			beforeSend:function(XMLHttpRequest){
+				$("#file-container").append("<img src='/agent/static/image/ajax-loading-image.gif'/>");
+				$("#file-container .retrieved-file").remove();
+				$("#retrieve-button").addClass("disabled");
+			},
+			success:function(data){
+				$("#file-container").empty();
+				var content="";
+				$(data).each(function(index,item){
+					content+="<a class='btn btn-link retrieved-file' href='"+item.path+"'>Retrieved file from device</a>";
+				});
+				$("#file-container").append(content);
+            	
+			},
+			error:function(){
+				alert("Error.");
+			},
+			complete: function(XMLHttpRequest, textStatus){
+				$("#retrieve-button").removeClass("disabled");
+				("#file-container img").remove();
+			}
+		});
+	}
+</script>
+
+<!-- Open Control Panel -->
+<div class="modal fade" id="control-panel" tabindex="-1" role="dialog" aria-labelledby="" installapk""="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+      	<iframe id="control-frame" style="zoom: 0.6;" height="650" src="" frameborder="0" width="99.6%"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	function openControl(url){
+		$("#control-frame").attr("src",url);
+		$('#control-panel').modal('show');
+	}
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="historyUsage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:70%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">History Usage</h4>
+      </div>
+       <form action="http://9.110.180.218:8080/agent/vm/create" method="post" id="createvm-form">
+	      <div class="modal-body">
+		      <div class="row">
+		      	<div class="col-lg-3">
+		      		<ul class="pager" style="margin:0;">
+					  <li class="previous btn-sm"><a href="http://9.110.180.218:8080/agent/application#">Previous</a></li>
+					  <li class="next btn-sm"><a href="http://9.110.180.218:8080/agent/application#">Next</a></li>
+					</ul>
+		      	</div>
+		      	<div class="col-lg-6">
+		      	</div>
+		      	<div class="col-lg-3">
+		      		
+					<div class="form-group">
+						<div class="input-group">
+							<input class="form-control btn-sm" size="" type="text" value="" placeholder="Search...">
+							<span class="input-group-addon">
+								<a href="http://9.110.180.218:8080/agent/application#"><span class="fa fa-search"></span></a>
+							</span>
+							<span class="input-group-addon">
+								<a href="http://9.110.180.218:8080/agent/application#"><span class="fa fa-download"></span></a>
+							</span>
+						</div>
+					</div>
+					
+		      	</div>
+		      </div>
+		      <div class="row">
+		      	<div class="col-lg-12">
+		      	<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Request VM</th>
+							<th>Request Device</th>
+							<th>Start Time</th>
+							<th>End Time</th>
+							<th>Rent Duration</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+						<tr>
+							<td>9.110.129</td>
+							<td>SH0139856</td>
+							<td>2014/02/14 12:00:00</td>
+							<td>2014/02/15 12:00:00</td>
+							<td>24h 0m 0s</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+		      </div>
+	      </div></form>
+       
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+		</div>
+	</div>
+
+</body></html>

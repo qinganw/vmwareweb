@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
 
 	/**
-	 * 登录页面
 	 * @return
 	 */
 	@RequestMapping("/login")
@@ -21,7 +20,6 @@ public class LoginController {
     }
 	
 	/**
-	 * 登录处理
 	 * @return
 	 */
 	@RequestMapping("/loginProcess")
@@ -39,7 +37,6 @@ public class LoginController {
     }
 	
 	/**
-	 * 注销
 	 * @return
 	 */
 	@RequestMapping("/logout")
