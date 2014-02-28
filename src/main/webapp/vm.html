@@ -12,24 +12,24 @@
     <link href="./css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-<!--     <link href="http://9.110.180.218:8080/agent/static/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://9.110.180.218:8080/agent/static/font-awesome/css/font-awesome.min.css">	
-     -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">	
+    
     <!-- JavaScript -->
-    <script src="./jquery-1.10.2.js"></script>
-    <script src="./bootstrap.js"></script>
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/bootstrap.js"></script>
 
     <!-- Page Specific Plugins -->
-    <script src="./jquery.tablesorter.js"></script>
-    <script src="./tables.js"></script>
+    <script src="./js/jquery.tablesorter.js"></script>
+    <script src="./js/tables.js"></script>
     
     <!-- Ickeck -->
-<!--     <link href="http://9.110.180.218:8080/agent/static/js/icheck/skins/all.css" rel="stylesheet"> -->
-    <script src="./jquery.icheck.min.js"></script>
+    <link href="./js/icheck/skins/all.css" rel="stylesheet">
+    <script src="./js/jquery.icheck.min.js"></script>
     
     <!-- Date Picker -->
-   <!--  <link href="http://9.110.180.218:8080/agent/static/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet">
-    --> <script src="./bootstrap-datetimepicker.js"></script>
+   <link href="./css/bootstrap-datetimepicker.css" rel="stylesheet">
+   <script src="./js/bootstrap-datetimepicker.js"></script>
 
 
 <style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
@@ -37,9 +37,6 @@
 <body style="">
 	<div id="container">
 		<!-- Sidebar -->
-
-
-
 <script type="text/javascript">
 	$(document).ready(function(){
 		$(".vm").addClass("selected");
@@ -47,7 +44,7 @@
 </script>
 <div class="navigation">
 	<div class="navigation-profile">
-		<a class="avatar" style="background-image: url(&#39;/agent/static/image/poweroff.png&#39;)" href="http://9.110.180.218:8080/agent/login/logout" title="Log out"></a>
+		<a class="avatar" style="background-image: url(./image/poweroff.png)" href="http://9.110.180.218:8080/agent/login/logout" title="Log out"></a>
 		<p class="user-name" style="color:white;"> mdcservice <a href="http://9.110.180.218:8080/agent/login/logout"><span class="fa fa-power-off" style="color: white;"></span></a></p>
 		<p class="user-name">
 			<span class="badge">2</span> VM in using <br><br>
@@ -59,18 +56,18 @@
 		<h5>Resources</h5>
 		<ul>
 			<li class="item vm selected">
-				<a href="./Mobile Cloud-vm_files/Mobile Cloud-vm.htm">
-					<span class="fa fa-file"></span> VM 
+				<a href="vm.htm">
+					<i class="fa fa-desktop"></i> VM 
 				</a>
 			</li>
 			<li class="item application">
-				<a href="http://9.110.180.218:8080/agent/application">
-					<span class="fa fa-file"></span> Mobile Device 
+				<a href="mobiledevice.html">
+					<i class="fa fa-bar-chart-o"></i> Mobile Device 
 				</a>
 			</li>
 			<li class="item operatelog">
-				<a href="http://9.110.180.218:8080/agent/operatelog">
-					<span class="fa fa-file"></span> Log 
+				<a href="log.html">
+					<i class="fa fa-dashboard"></i> Log 
 				</a>
 			</li>
 		</ul>
@@ -82,7 +79,7 @@
 			
 			<li class="item">
 				<a href="http://9.110.180.218:8080/agent/vm#">
-					<span class="fa fa-file"></span> Guide &amp; Document
+					<span class="fa fa-file-text-o"></span> Guide &amp; Document
 				</a>
 			</li>
 		</ul>
