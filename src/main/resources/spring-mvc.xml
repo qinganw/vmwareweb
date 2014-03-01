@@ -58,7 +58,4 @@
           p:maxUploadSize="5000000"
           p:uploadTempDir="upload/temp"/>
     
-    <mvc:interceptors>
-		<bean class="com.ibm.smfr.interceptor.LoginInterceptor"></bean>
-	</mvc:interceptors>
 </beans>

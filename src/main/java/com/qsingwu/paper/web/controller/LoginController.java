@@ -23,12 +23,12 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping("/loginProcess")
-    public String loginProcess(@RequestParam(value="j_username") String j_username,
-            @RequestParam(value="j_password") String j_password,ModelMap map,HttpSession session) {
+    public String loginProcess(@RequestParam(value="userName") String username,
+            @RequestParam(value="password") String password,ModelMap map,HttpSession session) {
 	    
-			if("mdcservice".equals(j_username) && "123456".equals(j_password)){
-    	        session.setAttribute("username", j_username);
-    	        return "redirect:home";
+			if("mdcservice".equals(username) && "123456".equals(password)){
+    	        session.setAttribute("username", username);
+    	        return "redirect:vm";
     	    }
     	    else{
     	        map.addAttribute("errormsg", "name or pwd wrong!");
